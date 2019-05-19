@@ -21,52 +21,60 @@
 	<main class="container">
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
-			<form action="" method="get">
-				<div>
-					<h3>Инфраструктура</h3>
+			<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Инфраструктура</legend>
 					<ul class="filters-list">
 						<li class="filters-item">
-							<input id="pool-checkbox-id" type="checkbox" name="pool-checkbox" checked>
+							<input class="filter-checkbox"  type="checkbox" name="pool-checkbox" id="pool-checkbox-id" checked>
 							<label for="pool-checkbox-id">Бассейн</label>
 						</li>
 						<li class="filters-item">
-							<input id="parking-checkbox-id" type="checkbox" name="parking-checkbox">
+							<input class="filter-checkbox" type="checkbox" name="parking-checkbox" id="parking-checkbox-id">
 							<label for="parking-checkbox-id">Парковка</label>
 						</li>
 						<li class="filters-item">
-							<input id="wifi-checkbox-id" type="checkbox" name="wifi-checkbox">
+							<input type="checkbox" name="wifi-checkbox" id="wifi-checkbox-id">
 							<label for="wifi-checkbox-id">Wi-fi</label>
 						</li>
 					</ul>
-				</div>
-				<div>
-					<h3>Тип жилья</h3>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья</legend>
 					<ul class="filters-list">
 						<li class="filters-item">
-							<input id="hotel-checkbox-id" type="checkbox" name="hotel-checkbox" checked>
+							<input class="filter-checkbox" type="checkbox" name="hotel-checkbox" id="hotel-checkbox-id" checked >
 							<label for="hotel-checkbox-id">Гостиница</label>
 						</li>
 						<li class="filters-item">
-							<input id="motel-checkbox-id" type="checkbox" name="motel-checkbox" checked>
+							<input class="filter-checkbox" type="checkbox" name="motel-checkbox" id="motel-checkbox-id" checked>
 							<label for="motel-checkbox-id">Мотель</label>
 						</li>
 						<li class="filters-item">
-							<input id="aparts-checkbox-id" type="checkbox" name="aparts-checkbox" checked>
+							<input class="filter-checkbox" type="checkbox" name="aparts-checkbox" id="aparts-checkbox-id" checked>
 							<label for="motel-checkbox-id">Апартаменты</label>
 						</li>
 					</ul>
-				</div>
-				<div>
-					<h3>Стоимость в сутки (Р)</h3>
-					<label for="cost-id">
-						<div>
-							<span>от 0</span>
-							</span> до 3000</span>
-						</div>
-					</label>
-					<!--?-->
-				</div>
-				<a class="show-link" href="#">Показать</a>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (Р)</legend>
+					<div>
+						<label>
+							Oт
+							<input class="price" type="text" name="start-price" value="0">
+						</label>
+						<label>
+							До
+							<input class="price" type="text" name="end-price" value="3000">
+						</label>
+					</div>
+					<div>
+						<button class="range-button range-button-min" type="button" aria-label="Минимальная цена"></button>
+						<span><!--Линия шкалы--></span>
+						<button class="range-button range-button-max" type="button" aria-label="Максимальная цена"></button>
+					</div>
+				</fieldset>
+				<button class="button transparent-button" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="suitable-hotels">
@@ -80,16 +88,16 @@
 					<li class="sort-item"><a class="sort-rate-link" href="#">По рейтингу</a></li>
 				</ul>
 				<div>
-					<a href="#">кнопка вверх</a>
-					<a href="#">кнопка вниз</a>
+					<button class="button-up" type="button">кнопка вверх</button>
+					<button class="button-down" type="button">кнопка вниз</button>
 				</div>
 			</div>
-			<ul class="hotels-list">
+			<ul class="hotels-list"> 
 				<li class="hotels-item">
-					<h2><a href="#">Amara Resort & Spa</a></h2>
 					<a href="#">
+						<h2>Amara Resort & Spa</h2>
 						<img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-					</a>
+					</a>	
 					<div>
 						<span class="hotel-type">Гостиница</span>
 						<span class="hotel-price">от 4000 Р.</span>
@@ -107,10 +115,10 @@
 					<div class="rating">Рейтинг: 8,5</div>
 				</li>
 				<li class="hotels-item">
-					<h2><a href="#">Desert Quail Inn</a></h2>
 					<a href="#">
+						<h2>Desert Quail Inn</h2>
 						<img src="img/hotel-picture-2.jpg" wigth="135" height="90" alt="Мотель Desert Quail Inn">
-					</a>
+					</a>	
 					<div>
 						<span class="hotel-type">Мотель</span>
 						<span class="hotel-price">от 3000 Р.</span>
@@ -127,8 +135,8 @@
 					<div class="rating">Рейтинг: 8,9</div>
 				</li>
 				<li class="hotels-item">
-					<h2><a href="#">Villas at Poco Diablo</a></h2>
 					<a href="#">
+						<h2>Villas at Poco Diablo</h2>
 						<img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
 					</a>
 					<div>

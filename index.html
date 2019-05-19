@@ -85,11 +85,36 @@
 		<section class="hotel-suggestions">
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<!-- Здесь будет форма -->
+			<a class="search-link" href="#">Поиск гостиницы в Седоне</a>
+			<form class="search-form" action="https://echo.htmlacademy.ru" action="get">
+				<div>
+					<label class="search-label" for="entry-date-id">Дата заезда:</label>
+					<input class="search-field" type="text" placeholder="24 апреля 2017" value="" id="entry-date-id">
+					<button class="search-calendar" type="button">Календарь</button>
+				</div>
+				<div>
+					<label class="search-label" for="leave-date-id">Дата выезда:</label>
+					<input class="search-field" type="text" placeholder="4 июля 2017" value="" id="leave-date-id">
+					<button class="search-button search-button-calendar" type="button">Календарь</button>
+				</div>
+				<div>
+					<label class="search-label search-label-column" for="adults-id">Взрослые:</label>
+					<button class="search-button search-button-minus">Минус</button>
+					<input class="search-field search-field-small" type="text" placeholder="2" value="" id="adults-id">
+					<button class="search-button search-button-plus">Плюс</button>
+				</div>
+				<div>
+					<label class="search-label search-label-column" for="children-id">Дети:</label>
+					<button class="search-button search-button-minus">Минус</button>
+					<input class="search-field search-field-small" type="text" placeholder="0" value="" id="children-id">
+					<button class="search-button search-button-plus">Плюс</button>
+				</div>
+				<button class="button button-blue" type="submit">Найти</button>
+			</form>
 		</section>
 		<section class="map">
 			<a class="map-link" href="#">
-				<img src="img/map.jpg" width="1200" height="593" alt="Карта">
+				<img src="img/map.jpg" width="1200" height="593" alt="Расположение города Седона на карте">
 			</a>
 		</section>
 	</main>
