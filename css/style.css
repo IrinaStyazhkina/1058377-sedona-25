@@ -1,16 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-	
 	background-color: #f2f2f2;
-	
 }
 
 .white-back {
@@ -26,7 +23,6 @@ body {
 	text-align: center;
 	text-decoration: none;
 	color: #000000;
-	
 }
 
 .site-navigation a:hover {
@@ -42,12 +38,12 @@ body {
 }
 
 .hero {
+	text-align: center;
 	background-color: #81b3d2;
 	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: 1200px 773px;
-	text-align: center;
+	background-size: cover;
 }
 
 .advantages h2 {
@@ -79,13 +75,13 @@ body {
 }
 
 .advantage-item-blue {
-	background-color: #81b3d2; 
 	color: #ffffff;
+	background-color: #81b3d2; 
 }
 
 .advantage-item-gray {
-	background-color: #eeeeee;
 	color: #333333;
+	background-color: #eeeeee;
 }
 
 .advantage-item-gray h3 {
@@ -97,7 +93,7 @@ body {
 }
 
 
-.features-list h3{
+.features-list h3 {
 	font-size: 21px;
 	line-height: 21px;
 	text-align: center;
@@ -127,10 +123,6 @@ body {
 	text-align: center;
 }
 
-.search-label {
-	text-align: left;
-}
-
 .search-form {
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -138,7 +130,6 @@ body {
 .search-form input[type="text"] {
 	outline: none;
 	font: inherit;
-	text-align: left;
 	vertical-align: middle;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
@@ -158,9 +149,9 @@ body {
 }
 
 .search-button {
+	font-size: 0;
 	background: transparent;
-    border: none;
-    font-size:0;
+	border: none;
 }
 
 .button {
@@ -219,7 +210,6 @@ body {
 .filters legend {
 	font-size: 16px;
 	line-height: 21px;
-	text-align: left;
 }
 
 .filters ul {
@@ -228,7 +218,6 @@ body {
 
 .filters-item {
 	line-height: 21px;
-	text-align: left;
 }
 
 .price-block {
@@ -254,11 +243,10 @@ body {
 .transparent-button {
 	background: transparent;
     border: 2px solid #ffffff;
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #ffffff;
-	text-align: left;
+	text-align: center;
 }
 
 .transparent-button:hover {
@@ -268,13 +256,11 @@ body {
 
 .found {
 	font-size: 21px;
-	text-align: left;
 }
 
 .suitable-hotels h4,
 .sort-item {
 	font-size: 14px;
-	text-align: left;
 	line-height: 18px;
 	font-weight: 400;
 } 
@@ -307,22 +293,20 @@ body {
 }
 
 .hotels-list .hotel-name{
-	text-align: left;
 	text-decoration: none;
 	color: #000000;
 }
 
-.hotels-list a:hover {
+.hotels-list .hotel-name:hover {
 	color: #81b3d2;
 }
 
-.hotels-list a:focus {
+.hotels-list .hotel-name:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-type,
 .hotel-price {
-	text-align: left;
 	line-height: 21px;
 	color: #333333;
 	font-weight: 400;
@@ -332,13 +316,12 @@ body {
 	line-height: 21px;
 	text-align: center;
 	color: #666666;
-	font-weight: 400;
-	
+	font-weight: 400;	
 	background-color: #f2f2f2;
 }
 
 .main-footer {
-	opacity: 0.9;
+	background-color: (255, 255, 255, 0.9);
 }
 
 .footer-social {
