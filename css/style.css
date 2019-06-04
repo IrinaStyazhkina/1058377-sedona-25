@@ -11,8 +11,6 @@ body {
 }
 
 .white-back {
-	display: flex;
-	flex-direction: column;
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
@@ -109,51 +107,33 @@ body {
 	background-position: 0 2px;
 }
 
-.advantages {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	width: 1200px;
-	align-items: center;
-}
-
-.advantages-row {
-	display: flex;
-	align-items: stretch;
-}
-
-.advantages h2 {
+.advantages .advantages-header {
 	font-size: 21px;
 	text-align: center;
-}
-
-.advantages > h2 {
+	margin: 0 auto;
 	width: 440px;
 }
 
 .advantages .intro {
 	color: #333333;
 	text-align: center;
-}
-
-.advantage-item {
-	width: 400px;
-	box-sizing: border-box;
-}
-
-.advantages > p {
 	margin-bottom: 50px;
+}
+
+.advantages-row {
+	display: flex;
+	justify-content: space-between;
 }
 
 .advantages-row:nth-of-type(1) .advantage-item {
 	padding: 46px 60px 58px;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 .advantages-row:nth-of-type(2) .advantage-item {
 	padding: 44px 48px 64px;
 	margin-bottom: -4px;
+
 }
 
 .advantages-row:nth-of-type(3) .advantage-item:nth-of-type(1) {
@@ -169,6 +149,11 @@ body {
 .advantages-row:nth-of-type(3) .advantage-item:nth-of-type(3) {
 	padding: 50px 76px 64px;
 	margin-top: -10px;
+}
+
+.advantage-item {
+	width: 400px;
+	box-sizing: border-box;
 }
 
 .advantage-item h3 {
@@ -261,16 +246,17 @@ body {
 	z-index: 10;
 }
 
+
 .search-form {
 	display: flex;
 	flex-wrap: wrap;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.2);
 	width: 568px;
 	box-sizing: border-box;
-	margin: 0 auto;
-	margin-bottom: 78px;
 	z-index: 10;
-	position: relative;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: #ffffff;
 }
 
@@ -370,8 +356,7 @@ body {
 }
 
 .map {
-	position: absolute;
-	top: 2120px;
+	position: relative;
 	z-index: 1;
 }
 
@@ -599,10 +584,15 @@ body {
 	background-color: #f2f2f2;
 }
 
-.main-footer {
+.footer {
 	background-color: rgba(255, 255, 255, 0.9);
-	position: relative;
+	width: inherit;
+}
+
+.main-footer {
+	position: absolute;
 	z-index: 10;
+	top: 2545px;
 }
 
 .footer-positioner {
