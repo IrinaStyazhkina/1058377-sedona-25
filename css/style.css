@@ -11,16 +11,16 @@ body {
 }
 
 .white-back {
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-
 .site-navigation {
+	display: flex;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -36,7 +36,6 @@ body {
 }
 
 .site-navigation li {
-	display: inline-block;
 	padding: 0;
 	width: 240px;
 	text-align: center;
@@ -68,25 +67,26 @@ body {
 	color: #766357;
 }
 
-main.container {
+.white-back .container {
 	display: flex;
+	width: inherit;
+}
+
+main.container {
 	flex-direction: column;
-	flex-wrap: wrap;
-	width: 1200px;
 }
 
 .hero-positioner {
 	position: relative;
 	margin-bottom: 40px;
 	width: inherit;	
-	height: 510px;
+	min-height: 510px;
 }
 
 .hero {
 	position: absolute;
 	width: inherit;
 	min-height: 510px;
-	text-align: center;
 	background-color: #81b3d2;
 	background-image: url("../img/background-photo.jpg");
 	background-position: 0 -83px;
@@ -101,27 +101,17 @@ main.container {
 	margin-bottom: 21px;
 }
 
-.hero::before,
-.hero::after {
+.hero::before {
 	content: "";
 	position: absolute;
 	width: 1200px;
 	min-height: 59px;
 	background-image: url("../img/polygon.svg");
 	background-repeat: no-repeat;
-}
-
-.hero::before {
 	left: 0;
 	bottom: 0;
 	background-position: 0 2px;
 }
-
-.hero::after {
-	bottom: 0;
-	background-position: -599px 2px;
-}
-
 
 .advantages {
 	display: flex;
@@ -502,6 +492,7 @@ main.container {
 .found-positioner {
 	display: flex;
 	align-items: center;
+	margin-bottom: 30px;
 }
 .found {
 	font-size: 21px;
@@ -522,14 +513,11 @@ main.container {
 	margin-right: 22px;
 }
 
-.sort-item {
-	display: inline-block;
-}
-
 .sort-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
 }
 
 .suitable-hotels .found {
@@ -582,8 +570,22 @@ main.container {
 }
 
 .hotels-item {
-	margin: 0 auto;
+	display: flex;
+	padding: 30px 72px;
 	width: 1056px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-item:first-of-type {
+	border-top: 1px solid #e5e5e5;
+}
+
+.hotels-item h2 {
+	margin: 0;
+}
+
+.rating-positioner{
+	margin-left: auto;
 }
 
 .hotel-type,
@@ -606,12 +608,6 @@ main.container {
 	position: relative;
 	z-index: 10;
 }
-
-.main-footer .container {
-	display: flex;
-	flex-wrap: no-wrap;
-}
-
 
 .footer-social {
 	padding: 0;
