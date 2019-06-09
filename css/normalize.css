@@ -147,6 +147,8 @@ sup {
 
 img {
   border-style: none;
+  vertical-align: bottom;
+  max-width: 100%;
 }
 
 /* Forms
