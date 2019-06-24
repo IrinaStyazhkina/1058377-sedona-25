@@ -327,7 +327,6 @@ img {
 	color: #000000;
 	background-color: #f2f2f2;
 	border: none;
-	padding: 6px 15px;
 	box-sizing: border-box;
 }
 
@@ -365,18 +364,11 @@ img {
 	padding: 15px 55px;
 	width: 568px;
 	box-sizing: border-box;
+	justify-content: space-between;
 }
 
 .search-big-positioner:first-child {
 	margin-top: 40px;
-}
-
-.search-big-positioner:nth-of-type(3) {
-	justify-content: space-between;
-}
-
-.search-big-positioner > .search-field {
-	margin-left: 20px;
 }
 
 .search-button-calendar {
@@ -398,8 +390,10 @@ img {
 	background: url("../img/calendar_focus.svg") no-repeat;
 }
 
-.search-field {
+.search-field-big {
 	width: 346px;
+	height: 38px;
+	padding: 6px 15px 6px 15px;
 }
 
 .search-small-positioner {
@@ -408,7 +402,6 @@ img {
 }
 
 .search-small-positioner:nth-of-type(1) .search-label-column{
-
 	margin-right: 40px;
 }
 
@@ -738,6 +731,7 @@ img {
 	margin: 0;
 	color: inherit;
 	font: inherit;
+	line-height: 21px;
 	background: none;
 	border: none;
 }
